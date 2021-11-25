@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".activities.login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/phonebooth_img"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:src="@drawable/app_icon" />
+
+
+        <customfonts.TextView_opensans_light
+            android:id="@+id/tv_url_boothbook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonebooth_img"
+            android:gravity="center"
+            android:text="@string/boothbook_url"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <customfonts.EditText_opensans_light
+            android:id="@+id/et_url"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/tv_url_boothbook"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="#C2D4E2"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:hint="subdomain.domain.com"
+            android:text="https://eu3test.myboothbooking.com"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <!--<customfonts.EditText_opensans_light-->
+        <!--android:id="@+id/et_url"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/_30sdp"-->
+        <!--android:layout_below="@+id/tv_url_boothbook"-->
+        <!--android:layout_marginLeft="@dimen/_20sdp"-->
+        <!--android:layout_marginTop="@dimen/_5sdp"-->
+        <!--android:layout_marginRight="@dimen/_20sdp"-->
+        <!--android:background="#C2D4E2"-->
+        <!--android:imeOptions="actionNext"-->
+        <!--android:inputType="text"-->
+        <!--android:paddingLeft="@dimen/_10sdp"-->
+        <!--android:paddingRight="@dimen/_10sdp"-->
+        <!--android:text="https://vendor.myboothbooking.com"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+
+        <customfonts.TextView_opensans_light
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_url"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="@string/username"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <customfonts.EditText_opensans_light
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="#C2D4E2"
+            android:text="Alex Jones"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:hint="username"
+            android:textSize="@dimen/_12sdp" />
+
+        <customfonts.TextView_opensans_light
+            android:id="@+id/tv_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_name"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <customfonts.EditText_opensans_light
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/tv_pass"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="#C2D4E2"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="abc123"
+            android:paddingRight="@dimen/_10sdp"
+            android:hint="password"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <customfonts.TextView_opensans_light
+            android:id="@+id/login_tv"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/et_pass"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/bg_login_btn"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <customfonts.TextView_opensans_light
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/having_trouble_in"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+

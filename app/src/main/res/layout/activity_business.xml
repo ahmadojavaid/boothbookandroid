@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.AddBusinessActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/backimg"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="left"
+                android:padding="@dimen/_15sdp"
+
+                android:src="@drawable/ic_back_arrow"
+                android:tint="@color/white" />
+
+
+            <ImageView
+                android:id="@+id/businessLogoImg"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:scaleType="centerCrop" />
+
+
+            <customfonts.TextView_opensans_bold
+                android:id="@+id/businessNametv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+
+                android:text="@string/my_business_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+
+                />
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/firstName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/first_name_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/firstName_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/last_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/last_name_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/last_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:imeOptions="actionDone"
+
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/company_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/company_name_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/company_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/email_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/email_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/telephone_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/telephone_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/telephone_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/mobile_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/mobile_phone_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/mobile_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/address_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/address_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/city_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/city_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/city_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/postcode_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/postcode_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/postcode_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/event_date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/event_date_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.TextView_opensans_light
+                android:id="@+id/event_date_selection"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:gravity="left|center"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:drawableRight="@drawable/ic_arrow_down"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <customfonts.TextView_opensans_regular
+                        android:id="@+id/event_start_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/event_start_time_with_star"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <customfonts.TextView_opensans_light
+                        android:id="@+id/event_start_time_selection"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/et_bg_business"
+                        android:gravity="left|center"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <customfonts.TextView_opensans_regular
+                        android:id="@+id/event_end_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/event_time_with_star"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <customfonts.TextView_opensans_light
+                        android:id="@+id/event_end_time_selection"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/et_bg_business"
+                        android:gravity="left|center"
+                        android:imeOptions="actionDone"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/event_type_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/event_type_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/event_type_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:clickable="false"
+                android:editable="false"
+                android:focusable="false"
+                android:drawableRight="@drawable/ic_arrow_down"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/event_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/event_name_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/event_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <!--for venue name-->
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/venue_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/venu_name_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/venue_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <!--for venue Address-->
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/venue_address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/venue_address_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/venue_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <!--for venue Post code-->
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/venue_postcode_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/venue_postcode_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/venue_postcode_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/event_budget_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/max_budget_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/event_budget_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/additional_notes_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/additional_notes_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+            <customfonts.EditText_opensans_light
+                android:id="@+id/additional_notes_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/et_bg_business"
+                android:gravity="left"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="@dimen/_8sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/contact_permission_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/contact_permission_with_star"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Yes please, we’d like to hear about offers and services." />
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/submit_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <customfonts.TextView_opensans_regular
+                android:id="@+id/clear_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:gravity="right"
+                android:text="@string/clear_form"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

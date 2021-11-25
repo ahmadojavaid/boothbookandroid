@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".activities.BookingActivity">
+
+    <!--<com.applandeo.materialcalendarview.CalendarView-->
+        <!--android:id="@+id/calendarView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:abbreviationsBarColor="#42709E"-->
+        <!--app:abbreviationsLabelsColor="@color/white"-->
+        <!--app:anotherMonthsDaysLabelsColor="#42709E"-->
+        <!--app:daysLabelsColor="@color/white"-->
+        <!--app:disabledDaysLabelsColor="#8FBDBDBD"-->
+        <!--app:headerColor="@color/colorPrimaryDark"-->
+        <!--app:headerLabelColor="@color/white"-->
+        <!--app:pagesColor="#42709E"-->
+        <!--app:selectionColor="@color/white"-->
+        <!--app:selectionLabelColor="@color/colorPrimaryDark"-->
+        <!--app:swipeEnabled="true"-->
+        <!--app:todayLabelColor="@color/colorPrimaryDark"-->
+        <!--app:type="many_days_picker" />-->
+
+    <customfonts.TextView_opensans_bold
+        android:id="@+id/booking_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/calendarView"
+        android:background="#FFFFFF"
+        android:elevation="@dimen/_2sdp"
+        android:gravity="center"
+        android:text="@string/bookings"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/booking_layout">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

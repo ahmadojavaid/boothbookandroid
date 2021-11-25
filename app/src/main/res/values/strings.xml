@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">BoothBook</string>
+    <string name="boothbook_url">BOOTHBOOK URL</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">Login</string>
+    <string name="having_trouble_in">Having trouble logging in?</string>
+    <string name="bookings">Bookings</string>
+    <string name="enter_url">Please enter BoothBook URL</string>
+    <string name="enter_valid_url">Please Enter Valid BoothBook URL</string>
+    <string name="enter_name">Please Enter Name</string>
+    <string name="enter_pass">Password length should be greater than 6</string>
+    <string name="no_internet">Please connect to internet</string>
+    <string name="email">Email</string>
+    <string name="call">Call</string>
+    <string name="apply">Apply</string>
+    <string name="event_date_with_colon">Event Date:</string>
+    <string name="booking_id_with_colon">Booking ID:</string>
+    <string name="search_all">Search All:</string>
+    <string name="signature">Signature</string>
+    <string name="clear_signature">Clear Signature</string>
+    <string name="signer_name">Signer Name</string>
+    <string name="signer_title">Signer Title</string>
+    <string name="submit">Submit</string>
+    <string name="sync">Sync</string>
+    <string name="options">Options</string>
+    <string name="edit_booking_signature">Edit Booking Signature</string>
+    <string name="signer_name_field">Signer Name Field</string>
+    <string name="lebel">Label</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="display">Display</string>
+    <string name="signer_title_field">Signer Title Field</string>
+    <string name="submit_button">Submit Button</string>
+    <string name="my_business_name">My Business Name</string>
+    <string name="first_name_with_star">First Name*</string>
+    <string name="last_name_with_colon">Last Name*</string>
+    <string name="email_with_star">Email*</string>
+    <string name="telephone">Telephone</string>
+    <string name="additional_notes">Additional Notes</string>
+    <string name="clear_form">Clear Form</string>
+    <string name="book_now">Book Now</string>
+    <string name="last_name_with_star">Last Name*</string>
+    <string name="company_name_with_star">Company*</string>
+    <string name="telephone_with_star">Telephone*</string>
+    <string name="mobile_phone_with_star">Mobile Phone*</string>
+    <string name="address_with_star">Address*</string>
+    <string name="city_with_star">City*</string>
+    <string name="postcode_with_star">Postcode*</string>
+    <string name="event_date_with_star">Event Date*</string>
+    <string name="event_time_with_star">Event Time*</string>
+    <string name="event_type_with_star">Event Type*</string>
+    <string name="event_name_with_star">Event Name*</string>
+    <string name="max_budget_with_star">Max Budget*</string>
+    <string name="additional_notes_with_star">Additional Notes*</string>
+    <string name="max_budget">Max Budget</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_type">Event Type</string>
+    <string name="event_time">Event Time</string>
+    <string name="event_date">Event Date</string>
+    <string name="postcode">PostCode</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="mobile_phone">Phone Number</string>
+    <string name="company_name">Company Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="contact_permission">Contact Permission</string>
+    <string name="desgin">Desgin</string>
+    <string name="required">Required</string>
+    <string name="additional_details">Additional Details</string>
+    <string name="add">Add</string>
+    <string name="onsubmit">On Submit</string>
+    <string name="thank_you_msg">Thankyou Message</string>
+    <string name="book_now_btn">Book Now Button</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="mobile">Mobile</string>
+    <string name="save">Save</string>
+    <string name="date_formated">--/--/----</string>
+    <string name="staff">Staff</string>
+    <string name="search_all_in_filter">Search all</string>
+    <string name="status">Status</string>
+    <string name="more_filters">+more filters</string>
+    <string name="signature_required_text">Signature Required: Confirm Guestbook has been received</string>
+    <string name="click_here_to_sign">Click here to Sign</string>
+    <string name="date">Date</string>
+    <string name="less_filter">less filters</string>
+    <string name="enter_values_to_search">Enter values to search</string>
+    <string name="thank_you_default_text">Thankyou, your form has been submitted. Ready to book now?</string>
+    <string name="contact_permission_with_star">Contact Permission*</string>
+    <string name="leads">Leads</string>
+    <string name="help">Help</string>
+    <string name="submit_lead_text">Submit a lead through your lead form to view it here</string>
+    <string name="displaying_all_leads">Displaying all leads</string>
+    <string name="send_email">Send Email</string>
+    <string name="event_types">Select Event Types</string>
+    <string name="please_draw_signature">Please draw signature</string>
+    <string name="enter_signer_name">Please Enter Signer name</string>
+    <string name="enter_signer_title">Please Enter Signer Title</string>
+    <string name="signature_uploaded">Signature Uploaded Successfully!</string>
+
+    <string-array name="android_layout_arrays">
+
+        <item>Unconfirmed</item>
+        <item>Customer Details Confirmed</item>
+
+    </string-array>
+
+
+
+    <string name="default_notification_channel_id">Notification</string>
+    <string name="event_details">Event Details</string>
+    <string name="venue_details">Venue Details</string>
+    <string name="venue_name">Venue Name</string>
+    <string name="venue_postcode">Venue Postcode</string>
+    <string name="venue_address">Venue Address</string>
+    <string name="event_start_time">Event Start Time</string>
+    <string name="event_end_time">Event End Time</string>
+    <string name="event_start_time_with_star">Event Start Time*</string>
+    <string name="event_end_time_with_star">Event End Time*</string>
+    <string name="venu_name_with_star">Venue Name*</string>
+    <string name="venue_address_with_star">Venue Address*</string>
+    <string name="venue_postcode_with_star">Venue Postcode*</string>
+    <string name="help_documentation">Help Documentation</string>
+
+
+
+
+</resources>

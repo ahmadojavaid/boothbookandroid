@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_back_arrow" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <customfonts.TextView_opensans_bold
+                android:id="@+id/booking_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/calendarView"
+                android:background="#EEEEEE"
+                android:elevation="@dimen/_2sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/edit_booking_signature"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <customfonts.TextView_opensans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:singleLine="true"
+
+                    android:text="Signature Field"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="#EFEFEF">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <customfonts.TextView_opensans_regular
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="Signature Field"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <customfonts.EditText_opensans_light
+                        android:id="@+id/signature_title_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/et_signature_config"
+                        android:gravity="left|center"
+                        android:hint="@string/signature"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </LinearLayout>
+
+                <customfonts.TextView_opensans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:text="@string/signer_name_field"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="#EFEFEF">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <customfonts.TextView_opensans_regular
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="@string/lebel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <customfonts.EditText_opensans_light
+                        android:id="@+id/signer_name_title_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/et_signature_config"
+                        android:gravity="left|center"
+                        android:hint="@string/signer_name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <customfonts.TextView_opensans_regular
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="@string/placeholder"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <customfonts.EditText_opensans_light
+                        android:id="@+id/signer_name_place_holder_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/et_signature_config"
+                        android:gravity="left|center"
+                        android:hint="JOE BLOGGS"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <customfonts.TextView_opensans_regular
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="@string/display"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_display_signer_name"
+                        android:layout_width="wrap_content"
+                        app:theme="@style/BrandedSwitch.control"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+                <customfonts.TextView_opensans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:text="@string/signer_title_field"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="#EFEFEF">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <customfonts.TextView_opensans_regular
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="@string/lebel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <customfonts.EditText_opensans_light
+                        android:id="@+id/signer_title_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/et_signature_config"
+                        android:gravity="left|center"
+                        android:hint="@string/signer_title"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <customfonts.TextView_opensans_regular
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="@string/placeholder"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <customfonts.EditText_opensans_light
+                        android:id="@+id/signer_placeholder_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/et_signature_config"
+                        android:gravity="left|center"
+                        android:hint="Mr"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+
+                    <customfonts.TextView_opensans_regular
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="@string/display"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_signer_title"
+                        android:layout_width="wrap_content"
+                        app:theme="@style/BrandedSwitch.control"
+
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+                <customfonts.TextView_opensans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:text="@string/submit_button"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="#EFEFEF">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <customfonts.TextView_opensans_regular
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="@string/lebel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <customfonts.EditText_opensans_light
+                        android:id="@+id/submit_label_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/et_signature_config"
+                        android:gravity="left|center"
+                        android:hint="@string/submit"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </LinearLayout>
+
+
+                <customfonts.TextView_opensans_regular
+                    android:id="@+id/save_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
